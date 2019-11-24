@@ -1,0 +1,14 @@
+{
+    "androidenv": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-pricemanager-androidenv-223007-authRole",
+            "UnauthRoleArn": "arn:aws:iam::676181025662:role/amplify-pricemanager-androidenv-223007-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::676181025662:role/amplify-pricemanager-androidenv-223007-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-pricemanager-androidenv-223007-deployment",
+            "UnauthRoleName": "amplify-pricemanager-androidenv-223007-unauthRole",
+            "StackName": "amplify-pricemanager-androidenv-223007",
+            "StackId": "arn:aws:cloudformation:us-east-2:676181025662:stack/amplify-pricemanager-androidenv-223007/e2abe500-0a7c-11ea-a5f7-066dd16eed5a"
+        }
+    }
+}
