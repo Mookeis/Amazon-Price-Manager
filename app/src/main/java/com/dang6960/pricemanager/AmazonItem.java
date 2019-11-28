@@ -8,6 +8,59 @@ import android.util.Log;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/*
+@startuml
+class AmazonItem{
+# String name
+# String description
+# String available
+# String[] images
+# URL url
+    # String brand
+    # int totalReviews
+    # String category
+    # String ASIN
+    # String price
+    # String shipping
+    # float averageRating
+---
++generateListingPageLink()
++getASIN()
++describeContents()
++writeToParcel()
+---Getters---
++getName()
++getDescription()
++getAvailable()
++getImages()
++getUrl()
++getBrand()
++getTotalReviews()
++getCategory()
++getItemASIN()
++getPrice()
++getShipping()
++getAverageRating()
+---Setters---
++setName()
++setDescription()
++setAvailable()
++setImages()
++setUrl()
++setBrand()
++setTotalReviews()
++setCategory()
++setItemASIN()
++setPrice()
++setShipping()
++setAverageRating()
+}
+AmazonItem <|-- Parcelable
+Parcelable : +createFromParcel()
+Parcelable : +newArray()
+Parcelable <|-- Parcel
+@enduml
+*/
 /**
  * Object class for Amazon item to contain item information from API
  * @see Object
@@ -222,7 +275,7 @@ public class AmazonItem implements Parcelable {
      *
      * @return item ASIN
      */
-    public String getASIN() {
+    public String getItemASIN() {
         return ASIN;
     }
 
@@ -287,7 +340,7 @@ public class AmazonItem implements Parcelable {
      * @param item an Amazon item
      */
     static void debugAmazonItem(AmazonItem item){
-        Log.d("AmazonItem", item.getName() + " " + item.getASIN() + " " + item.getDescription() + " " + item.getPrice());
+        Log.d("AmazonItem", item.getName() + " " + item.getItemASIN() + " " + item.getDescription() + " " + item.getPrice());
     }
 
     /**

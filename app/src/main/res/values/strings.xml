@@ -22,4 +22,6 @@
         One may also access their watchlist using the action button in the bottom left corner of the page.
     </string>
     <string name="amazonPriceManagerAuthorName">Mackenzie Dang</string>
+    <string name="watchlistTitle">Watchlist</string>
+    <string name="deleteItemLabel">Delete</string>
 </resources>

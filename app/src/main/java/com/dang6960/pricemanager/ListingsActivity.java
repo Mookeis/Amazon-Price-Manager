@@ -61,17 +61,13 @@ public class ListingsActivity extends AppCompatActivity implements ItemListingFr
     @Override
     public boolean onOptionsItemSelected(MenuItem mi) {
         int selected_id = mi.getItemId();
-
-        switch (selected_id) {
-            case R.id.aboutButton:
-                Log.d(ACTIVITY_NAME, "About selected");
-                Snackbar.make(findViewById(android.R.id.content), "Ver. 1 " + R.string.amazonPriceManagerAuthorName, Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                break;
-            case android.R.id.home:
-                Log.d(ACTIVITY_NAME, "Back Selected");
-                finish();
-                break;
+        if(selected_id == R.id.aboutButton){
+            Log.d(ACTIVITY_NAME, "About selected");
+            Snackbar.make(findViewById(android.R.id.content), "Ver. 1 " + R.string.amazonPriceManagerAuthorName, Snackbar.LENGTH_LONG)
+                    .setAction("Action", null).show();
+        }else if(selected_id == android.R.id.home){
+            Log.d(ACTIVITY_NAME, "Back Selected");
+            finish();
         }
         return true;
     }

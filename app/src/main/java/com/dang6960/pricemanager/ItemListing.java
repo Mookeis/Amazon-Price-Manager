@@ -3,6 +3,29 @@ package com.dang6960.pricemanager;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+/*
+@startuml
+class ItemListing{
+#String sellerName
+#String itemPrice
+#String itemCondition
++describeContents()
++writeToParcel()
+---Getters---
++getSellerName()
++getItemPrice()
++getItemCondition()
+---Setters---
++setSellerName()
++setItemPrice()
++setItemCondition()
+}
+ItemListing <|-- Parcelable
+Parcelable : +createFromParcel()
+Parcelable : +newArray()
+Parcelable <|-- Parcel
+@enduml
+*/
 public class ItemListing implements Parcelable {
     protected String sellerName, itemPrice, itemCondition;
 

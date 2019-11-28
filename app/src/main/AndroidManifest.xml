@@ -20,9 +20,10 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="m">
-        <activity android:name=".ListingsActivity"></activity>
-        <activity android:name=".ResultsActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".WatchlistActivity"></activity>
+        <activity android:name=".ListingsActivity" />
+        <activity android:name=".ItemResultsActivity" />
+        <activity android:name=".ItemSearchActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

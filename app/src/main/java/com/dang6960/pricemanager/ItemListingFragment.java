@@ -24,9 +24,7 @@ import java.util.ArrayList;
  */
 public class ItemListingFragment extends Fragment {
 
-    // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
-    // TODO: Customize parameters
     private int mColumnCount = 1;
     private OnListFragmentInteractionListener mListener;
 
@@ -37,7 +35,6 @@ public class ItemListingFragment extends Fragment {
     public ItemListingFragment() {
     }
 
-    // TODO: Customize parameter initialization
     @SuppressWarnings("unused")
     public static ItemListingFragment newInstance(int columnCount) {
         ItemListingFragment fragment = new ItemListingFragment();
